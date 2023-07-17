@@ -541,11 +541,11 @@ footer {
     line-height: normal;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:480px) {
 
     .container{
         overflow: hidden;
-        width: 330px;
+        max-width: 330px;
     }
     nav .container .ch {
         display: none;
@@ -565,9 +565,9 @@ footer {
         width: 30px;
         height: 30px;
          background-color: white;
-    position: absolute;
-     left: 340px;
-     top: 30px;
+        position: absolute;
+        left: 340px;
+        top: 30px;
        
      }
      nav .container .ch:checked +label +ul{
@@ -575,7 +575,7 @@ footer {
         position: absolute;
         top: 30px;
         left: 30px;
-        width: 330px;
+        max-width:  330px;
         /* height: 600px; */
         background-color: red;
         z-index: 12;
@@ -673,7 +673,7 @@ footer {
     .btn p {
         display: flex;
         font-family: 'Poppins', sans-serif;
-        width: 173px;
+        max-width:  173px;
         height: 54px;
         padding: 12px 14px;
         justify-content: center;
@@ -692,7 +692,7 @@ footer {
     }
     .box1{
        
-        width: 270px;
+       max-width: 270px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -700,7 +700,7 @@ footer {
         margin-top: 100px;
     }
     .image2 {
-        width:100%;
+        max-width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -761,7 +761,7 @@ footer {
     
     .home {
         gap: 154px;
-        width: 100%;
+        max-width: 100%;
         display: block;
         align-items: center;
         position: relative;
@@ -825,7 +825,7 @@ footer {
     }
     
     .what p {
-        width: 360px;
+        max-width: 360px;
         color: rgba(255, 255, 255, 0.80);
         font-family: 'Poppins', sans-serif;
         font-size: 14px;
@@ -837,7 +837,7 @@ footer {
     
     button {
         display: flex;
-        width: 137px;
+        max-width: 137px;
         height: 44px;
         padding: 12px 14px;
         justify-content: center;
@@ -863,11 +863,11 @@ footer {
         line-height: normal;
     }
     .image3{
-        width: 350px;
+        max-width: 350px;
         height: 300px;
     }
     .image3 img{
-        width: 300px;
+        max-width: 300px;
         height: 300px;
     }
     .work {
@@ -887,7 +887,7 @@ footer {
     }
     
     .how p {
-        width: 330px;
+        max-width: 330px;
         color: rgba(255, 255, 255, 0.80);
         text-align: center;
         font-family: 'Poppins', sans-serif;
@@ -899,14 +899,14 @@ footer {
     
     .discuss {
         flex-direction: column;
-        width: 374px;
+        max-width: 374px;
         flex-shrink: 0;
         background-color: #090823;
         margin-bottom: 40px;
     }
     
     .discuss img {
-        width: 335px;
+        max-width: 335px;
         height: 217px;
         flex-shrink: 0;
         font-size: 20px;
@@ -995,7 +995,7 @@ footer {
     }
     
     .our p {
-     width: 330px;
+        max-width: 330px;
         transform: rotate(0.26deg);
         color: rgba(255, 255, 255, 0.80);
         text-align: center;
@@ -1012,7 +1012,7 @@ footer {
         margin-bottom: 70px;
     }
     .imgMeta>img{
-        width: 330px;
+        max-width: 330px;
         margin-bottom: 50px;
     }
     .metaverse {
@@ -1055,7 +1055,7 @@ footer {
     
     .metav {
         display: flex;
-       width: 300px;
+       max-width: 300px;
        margin-bottom: 30px;
     }
     
@@ -1070,7 +1070,7 @@ footer {
     }
     
     .about {
-        width: 45%;
+        max-width: 45%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1118,7 +1118,7 @@ footer {
         align-items: start;
         justify-content: start;
         gap: 24px;
-        width: 200px;
+        max-width: 200px;
     }
     
     .www h5 {
