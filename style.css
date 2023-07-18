@@ -5,7 +5,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    border-radius: 896px;
+position: relative;
+}
 
+.q1{
+    position: absolute;
+    top: -350px;
+    rotate: 90deg;
+    left: 400px;
+}
+.q2{
+    position: absolute;
+    top: 300px;
+    left: 0px;
+}
+.q3{
+    position: absolute;
+    top: -200px;
+    rotate: 180deg;
+    left: 1300px;
+}
+.q4{
+    position: absolute;
+    top: 1000px;
+    rotate: 180deg;
+    left: 1440px;
+}
+.q5{
+    position: absolute;
+    top: 1900px;
+    rotate: 360deg;
+    left: 0px;
+}
+.q6{
+    position: absolute;
+    top: 2700px;
+    rotate: 180deg;
+    left: 1000px;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -13,6 +52,8 @@
     gap: 630px;
     margin-top: 45px;
     margin-bottom: 50px;
+}
+.container{
 }
 
 .drop {
@@ -32,8 +73,10 @@ body {
 }
 
 .container {
+    /* background-image: url(./img/Ellipse\ 8.png); */
     width: 1174px;
     margin: 0 auto;
+    /* background: radial-gradient(40.17% 39.79% at 50.00% 50.00%, rgba(170, 20, 240, 0.28) 0%, rgba(170, 20, 240, 0.00) 100%); */
 
 }
 
@@ -422,7 +465,6 @@ button {
 }
 
 .metaverse {
-    overflow: hidden;
 }
 
 .mmmm {
@@ -543,16 +585,77 @@ footer {
 
 @media screen and (max-width:480px) {
 
-    .container{
+    .q1{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 0px;
+        rotate: 90deg;
+        left: -40px;
+    }
+    .q2{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        rotate: 180deg;
+        top: 150px;
+        left: 145px;
+    }
+    .q3{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 730px;
+        rotate: 180deg;
+        left: 145px;
+    }
+    .q4{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 2100px;
+        rotate: 180deg;
+        left: 145px;
+    }
+    .q5{
+        position: absolute;
+        width: 200px;
+        display: block;
+        height: 200px;
+        top: 4500px;
+        rotate: 360deg;
+        left: 155px;
+
+    }
+    .q6{
+        display: none;
+    }
+     
+
+
+html{
+}
+    section , nav , footer, header{
+        max-width: 480px;
         overflow: hidden;
-        max-width: 330px;
+    }
+
+    .container{
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 0 5%;
+
+        transform: scaleX(0.8);
     }
     nav .container .ch {
         display: none;
+        
       }
       nav .container .ch:checked + label + ul {
         transform: translateX(-9%);
         display: block;
+        border: 2px solid green;
+
       }
       nav .container .ch:checked + label svg rect:nth-child(1) {
         display: none;
@@ -562,8 +665,8 @@ footer {
       }
       .drop{
         display: block;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
          background-color: white;
         position: absolute;
         left: 340px;
@@ -573,15 +676,17 @@ footer {
      nav .container .ch:checked +label +ul{
         display: block;
         position: absolute;
+        width: 120px;
         top: 30px;
         left: 30px;
-        max-width:  330px;
+        max-width:  100%;
         /* height: 600px; */
         background-color: red;
-        z-index: 12;
-        padding: 20px 50px;
+        
+       
 
      }
+
      ul {
         
         display: none;
@@ -590,15 +695,18 @@ footer {
         list-style: none;
     }
     ul>li>a{
-        font-size: 50px;
+        font-size: 15px;
+        
     }
     .explore {
         flex-direction: column;
         position: relative;
         align-items: center;
         justify-content: center;
-    
         
+    }
+    .navbar{
+    width: 100%;
     }
     
     .explore h1 {
@@ -660,8 +768,8 @@ footer {
     
     .btn button {
         display: flex;
-        width: 140px;
-        height: 54px;
+        max-width: 100%;
+        /* height: 54px; */
         padding: 12px 14px;
         justify-content: center;
         align-items: center;
@@ -673,8 +781,8 @@ footer {
     .btn p {
         display: flex;
         font-family: 'Poppins', sans-serif;
-        max-width:  173px;
-        height: 54px;
+        max-width:  100%;
+        /* height: 54px; */
         padding: 12px 14px;
         justify-content: center;
         align-items: center;
@@ -686,11 +794,13 @@ footer {
         display: flex;
         align-items: center;
         gap: 40px;
+        margin-top: 100px;
+        border: 2px solid red;
     }
     
     .box1{
        
-       max-width: 270px;
+       max-width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -739,21 +849,22 @@ footer {
     .auction {
         flex-direction: column;
         position: absolute;
-        top: -350px;
-        right: -10px
+        top: -200px;
+        right: 10px
+        
     }
     
     .artist {
         flex-direction: column;
         position: absolute;
-        top: -420px;
-        left: 70px;
+        top: -270px;
+        left: 100px;
     }
     
     .atvork {
         flex-direction: column;
         position: absolute;
-        top: -290px;
+        top: -190px;
         left: 0px;
     }
     
@@ -823,7 +934,7 @@ footer {
     }
     
     .what p {
-        max-width: 360px;
+        width:360px;
         color: rgba(255, 255, 255, 0.80);
         font-family: 'Poppins', sans-serif;
         font-size: 14px;
@@ -835,8 +946,8 @@ footer {
     
     button {
         display: flex;
-        max-width: 137px;
-        height: 44px;
+        max-width: 100%;
+        /* height: 44px; */
         padding: 12px 14px;
         justify-content: center;
         align-items: center;
@@ -852,6 +963,12 @@ footer {
         gap: 16px;
         margin-bottom: 87px;
     }
+    .how .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
     
     .how h1 {
         font-family: 'Orbitron', sans-serif;
@@ -861,12 +978,12 @@ footer {
         line-height: normal;
     }
     .image3{
-        max-width: 350px;
-        height: 300px;
+        max-width: 100%;
+        /* height: 300px; */
     }
     .image3 img{
-        max-width: 300px;
-        height: 300px;
+        max-width: 100%;
+        /* height: 300px; */
     }
     .work {
         display: block;
@@ -885,7 +1002,7 @@ footer {
     }
     
     .how p {
-        max-width: 330px;
+        max-width: 100%;
         color: rgba(255, 255, 255, 0.80);
         text-align: center;
         font-family: 'Poppins', sans-serif;
@@ -897,15 +1014,15 @@ footer {
     
     .discuss {
         flex-direction: column;
-        max-width: 374px;
+        max-width: 100%;
         flex-shrink: 0;
         background-color: #090823;
         margin-bottom: 40px;
     }
     
     .discuss img {
-        max-width: 335px;
-        height: 217px;
+        max-width: 100%;
+        /* height: 217px; */
         flex-shrink: 0;
         font-size: 20px;
     }
@@ -993,11 +1110,11 @@ footer {
     }
     
     .our p {
-        max-width: 330px;
+        width: 330px;
         transform: rotate(0.26deg);
         color: rgba(255, 255, 255, 0.80);
         text-align: center;
-        font-family: Poppins;
+        font-family: 'Poppins',sans-serif;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -1010,11 +1127,10 @@ footer {
         margin-bottom: 70px;
     }
     .imgMeta>img{
-        max-width: 330px;
+        max-width: 100%;
         margin-bottom: 50px;
     }
     .metaverse {
-        overflow: hidden;
     }
     
     .mmmm {
@@ -1027,7 +1143,7 @@ footer {
     
     .mmmm h2 {
         color: #FFF;
-        font-family: Orbitron;
+        font-family: 'Orbitron',sans-serif;
         font-size: 27px;
         font-style: normal;
         font-weight: 500;
@@ -1053,7 +1169,7 @@ footer {
     
     .metav {
         display: flex;
-       max-width: 300px;
+       max-width: 100%;
        margin-bottom: 30px;
     }
     
@@ -1068,7 +1184,7 @@ footer {
     }
     
     .about {
-        max-width: 45%;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
